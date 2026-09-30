@@ -1,7 +1,5 @@
 # CIMA: Continuous Implicit Manifold Attention
-
 ---
-
 About a year ago, I was feeding a 500-page book into ChatGPT to answer specific questions. Like anyone working with long contexts knows, LLMs start dropping details or running out of memory because the Key-Value (KV) cache grows massive—storing raw data for every single token eats up GPU VRAM instantly.
 
 Standard fixes usually try to solve this by either:
@@ -9,7 +7,6 @@ Standard fixes usually try to solve this by either:
 2. Heavy quantization (which turns memory into low-precision mush).
 
 I thought "What if instead of saving millions of individual data points, we map the sequence along a timeline and draw a smooth mathematical curve through the topics?"
-
 
 ## How It Works
 
@@ -21,7 +18,7 @@ CIMA replaces those sticky notes with two things:
 
 By combining smooth math with pinpoint anchors, you get massive memory savings without losing a single "needle in a haystack."
 
-Key Results
+## Key Results
 
 Tested on sequence lengths up to **32,000 tokens**:
 
@@ -37,12 +34,3 @@ Published as an open-access preprint on Zenodo:
 
 Title: Continuous Implicit Manifold Attention (CIMA): Sub-Linear KV Cache Memory Scaling via Neural Fields and Residual Anchors  
 DOI: [10.5281/zenodo.23049831](https://zenodo.org/records/23049831)
-
-```bibtex
-@article{sharvesh2026cima,
-  title={Continuous Implicit Manifold Attention (CIMA): Sub-Linear KV Cache Memory Scaling via Neural Fields and Residual Anchors},
-  author={Sharvesh},
-  journal={Zenodo Preprint},
-  doi={10.5281/zenodo.23049831},
-  year={2026}
-}
