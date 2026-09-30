@@ -1,7 +1,5 @@
 # CIMA: Continuous Implicit Manifold Attention
 
-A lightweight, high-accuracy KV cache compression architecture for long-context LLMs.
-
 ---
 
 About a year ago, I was feeding a 500-page book into ChatGPT to answer specific questions. Like anyone working with long contexts knows, LLMs start dropping details or running out of memory because the Key-Value (KV) cache grows massive—storing raw data for every single token eats up GPU VRAM instantly.
